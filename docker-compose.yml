@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: testing-app
+    ports:
+      - "3005:3005"
+    environment:
+      NODE_ENV: production
+    restart: always
