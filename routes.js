@@ -1,6 +1,6 @@
 
 const express = require("express");
-const { dummyApi, dummyApiGet } = require("../controllers/dummyController");
+const { dummyApi, dummyApiGet } = require("./controller");
 
 const router = express.Router();
 
